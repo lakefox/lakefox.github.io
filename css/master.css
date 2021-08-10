@@ -249,6 +249,8 @@ i#search {
   width: 100%;
 }
 select#filter {
+  -webkit-appearance: none;
+  -webkit-border-radius: none;
   height: 28px;
   border-style: solid;
   border-width: 1px;
