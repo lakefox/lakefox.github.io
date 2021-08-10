@@ -1,60 +1,67 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: url("https://raw.githubusercontent.com/lakefox/fyn/master/imgs/ocean.jpg");
+  background: #151414;
+  overflow-x: hidden;
 }
 .header {
-  font-size: 30em;
   font-family: "Anton";
-  top: 50px;
   color: #cccccc;
-  position: fixed;
-  z-index: -1;
-  word-break: break-all;
-  line-height: 90%;
+  font-size: 70px;
+  padding-left: 19px;
+}
+#art {
+  background: url("/assets/ocean.jpeg");
+  width: 500px;
+  height: 600px;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 4%;
 }
 .main {
   position: absolute;
   z-index: 1;
   width: 100%;
   min-height: 100%;
-  background: #fff;
-  border-top: #f95a5a solid 25px;
+  /* background: #eff1f1; */
+  background: #151414;
+  /* padding-top: 30vh; */
 }
 .mission_statement {
   font-size: 33px;
-  color: #212121;
+  color: #eff1f1;
   font-family: "Roboto Mono";
   width: 35%;
   min-width: 317px;
   margin-left: 10%;
   margin-top: 70px;
 }
-.whoweare {
+.block {
   font-size: 19px;
   font-family: "Nunito";
-  width: 40%;
+  width: 90%;
   min-width: 317px;
   margin: auto;
-  margin-top: 100px;
 }
 .img_cont {
     text-align: center;
     margin: 40px;
 }
-#waves {
-  max-width: 100%;
+#cipher {
+  max-width: 90%;
+  width: 600px;
 }
 a {
   text-decoration: none;
-  color: #212121;
+  color: #eff1f1;
   font-family: 'Roboto Mono';
 }
 
 .contact {
   text-align: center;
   font-size: 30px;
-  color: #212121;
+  color: #2d3138;
   margin: auto;
   margin-bottom: 100px;
   margin-top: 50px;
@@ -63,4 +70,194 @@ a {
   border-radius: 12px;
   padding: 5px;
   cursor: pointer;
+}
+
+.block_header {
+  font-size: 35px;
+  color: #1f1f1f;
+  padding: 50px;
+  padding-bottom: 0;
+  font-family: 'Roboto Mono';
+  background: #f1f1f1;
+}
+
+.content {
+  min-height: 300px;
+  background: #f1f1f1;
+}
+
+.bottom-border {
+  border-bottom: 5px dotted #151515;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#mission_statement {
+  color: #f1f1f1;
+  font-family: 'Roboto Mono';
+  display: -webkit-box;
+}
+#message {
+  margin-top: 18%;
+  width: calc(90% - 500px);
+  text-align: center;
+  font-size: 44px;
+  margin-left: 22px;
+  margin-bottom: 100px;
+}
+
+#chOutputs {
+  width: 500px;
+  max-width: 90%;
+  margin: auto;
+  padding-top: 30px;
+}
+.chOutput {
+  margin: 3px;
+  border: 2px solid #bbb;
+  padding: 2px;
+  margin-left: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+.chInput {
+  width: calc(50% - 20px);
+  border: 2px solid #bbb;
+  height: 23px;
+  background: #f1f1f1;
+  margin-bottom: 11px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+#chInputs {
+  text-align: center;
+}
+.writeup {
+  width: 700px;
+  margin: auto;
+  padding-top: 40px;
+  max-width: 90%;
+  text-align: justify;
+  color: #151414;
+  font-family: 'Nunito';
+}
+div#injectEncrypt {
+  background: #5899e2;
+  width: 255px;
+  padding: 17px;
+  font-family: 'Roboto Mono';
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+  color: #f1f1f1;
+}
+div#gkLLBox {
+  display: inline-grid;
+}
+
+div#gkBox {
+  width: 290px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto Mono';
+  color: #151414;
+  margin-top: 30px;
+}
+
+div#gkresBox {
+  padding-top: 42px;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: none;
+}
+
+#toolTip {
+  line-break: auto;
+  background: #bbb;
+  padding: 10px;
+  border-radius: 11px;
+  color: #292929;
+}
+
+
+
+.shresult {
+  display: inline-block;
+  color: #ccc;
+  background: #383838;
+  width: 250px;
+  border-radius: 8px;
+  padding: 13px;
+  margin: 30px;
+}
+.shdescription {
+  font-family: "Nunito";
+  border-bottom: 2px solid #ccc;
+}
+.shrow {
+  font-family: "Roboto Mono";
+  display: inline-block;
+}
+.shlinkholder {
+  text-align: right;
+  margin-top: -17px;
+}
+.shtelegramLink {
+  text-decoration: none;
+  color: #ccc;
+}
+
+
+.shCont {
+  margin: auto;
+  width: 677px;
+  max-width: 90%;
+  padding-top: 28px;
+  }
+
+#shResults {
+  overflow-x: auto;
+  width: 692px;
+  height: 500px;
+  max-width: 100%;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+
+#shBar {
+  width: calc(100% - 60px);
+  height: 24px;
+  font-size: 20px;
+  border: 2px solid #bbb;
+}
+i#search {
+  width: 42px;
+  background: #ef6461;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #f1f1f1;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.shembededVideo {
+  width: 100%;
+}
+select#filter {
+  height: 28px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffe4c400;
+  border-radius: 4px;
+  background: #15151526;
+  color: #484848;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-right: 10px;
 }
