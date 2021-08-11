@@ -229,7 +229,7 @@ input {
 }
 
 #shBar {
-  width: calc(100% - 60px);
+  width: calc(100% - 80px);
   height: 24px;
   font-size: 20px;
   border: 2px solid #bbb;
