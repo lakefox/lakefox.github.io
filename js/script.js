@@ -114,9 +114,9 @@ function search() {
     }
 
     let html = "";
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < data.length; i++) {
       let d = data[i];
-      if (d.video) {
+      if (d.video != "./cdn/undefined" && d.video != undefined) {
         html += getVideo(d);
       } else if (d.photos.length > 0) {
         for (var photoIndex = 0; photoIndex < d.photos.length; photoIndex++) {
