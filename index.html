@@ -1,0 +1,395 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAKEFOX</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="./css/master.css">
+    <script src="https://unpkg.com/cipherhash"></script>
+</head>
+
+<body>
+    <div class="flex mx30">
+        <img src="./assets/logo.png" class="logo" alt="LAKEFOX">
+        <h1 class="bold">LAKEFOX</h1>
+    </div>
+    <main x-data="{tab: 0}">
+        <div class="row">
+            <div class="col">
+                <h1>About</h1>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Hi there, I'm Mason Wright, a web developer and blogger based in the United States. I discovered my
+                    passion for
+                    programming back in 2015 and have been building web applications ever since, mainly using JavaScript
+                    and Node.js.
+                    Recently, I've been exploring Svelte and loving its simplicity and performance.
+                </p>
+                <p>
+                    Before pursuing a career in tech, I served in the military after graduating from high school. This
+                    experience taught me
+                    valuable skills such as discipline, teamwork, and problem-solving, which I apply in my work today.
+                </p>
+                <p>
+                    I'm passionate about web technologies because I believe they offer the best way to share information
+                    and software with
+                    the world. That's why I'm currently working on my tech blog called DECODE, where I share my thoughts
+                    on the latest web
+                    development trends and tools.
+                </p>
+                <p>
+                    In addition to my tech blog, I also run a food blog called TASTE and a general repair blog called
+                    HANDY. Blogging allows
+                    me to combine my interests in writing and technology, and I'm always looking for new ways to improve
+                    my skills and
+                    expand my knowledge.
+                </p>
+                <p>
+                    When I'm not coding or blogging, you can find me working out, reading, or trying out new recipes in
+                    the kitchen. I'm excited
+                    about the future of web development and can't wait to see where this ever-evolving field takes me
+                    next.
+                </p>
+            </div>
+            <div class="col">
+                <nav class="tabs is-full">
+                    <a x-on:click="tab = 0;" :class="{ 'active': tab == 0 }">Competences</a>
+                    <a x-on:click="tab = 1;" :class="{ 'active': tab == 1 }">Experience</a>
+                    <a x-on:click="tab = 2;" :class="{ 'active': tab == 2 }">Contact</a>
+                </nav>
+                <div x-show="tab == 0">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
+                                <li>Node JS</li>
+                                <li>Frameworks
+                                    <ul>
+                                        <li>Svelte</li>
+                                        <li>Alpine</li>
+                                        <li>Tailwind</li>
+                                        <li>Chota</li>
+                                        <li>DaisyUI</li>
+                                        <li>PicoCSS</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>GoDot</li>
+                                <li>Python</li>
+                                <li>PocketBase/MySQL</li>
+                                <li>NGINX</li>
+                                <li>VITE</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div x-show="tab == 1">
+                    <ul>
+                        <li>decode.sh
+                            <ul>
+                                <li>
+                                    Consistant writing schedule (one post a day)
+                                </li>
+                                <li>
+                                    Lots of technologies learned quickly
+                                </li>
+                                <li>
+                                    Learned web admin managment skills and how to grow traffic to a website organically
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Military 4+ years
+                            <ul>
+                                <li>Leadership</li>
+                                <li>Discipline</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div x-show="tab == 2">
+                    <ul>
+                        <li>
+                            Email
+                            <ul>
+                                <li>
+                                    mason (at) lakefox.net
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>
+                    LOW
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    LOW (<a href="https://low.sh">low.sh</a>) is a suite of tutorial websites, characterized by a
+                    consistent look and feel. The websites are powered by a
+                    bespoke blogging engine, endowed with a plethora of functionalities such as a post editor, a comment
+                    section, a
+                    newsletter and an ecommerce store. The platform follows a minimalist design philosophy, requiring
+                    only the posting of
+                    content by site administrators, with all other aspects automatically generated by the engine. Even
+                    the meta descriptions
+                    are created by a sophisticated text summarization algorithm, which handpicks the most captivating
+                    sentences for
+                    inclusion in the description. This singular feature has been observed to boost the click-through
+                    rate by an average of
+                    1.3%.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>
+                    DECODE
+                </h3>
+            </div>
+            <div class="col end">
+                <a class="button success">Active</a>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <p>
+                    DECODE is a website featuring high quality tutorials on programming and other topics. The goal is to
+                    help users learn and
+                    grow in their field, whether they are a beginner or an experienced developer. Our tutorials are
+                    carefully crafted to
+                    provide you with the knowledge and skills you need to succeed. DECODE also doubles as the code base
+                    for the blogging software all the LOW sites run on.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>
+                    TASTE
+                </h3>
+            </div>
+            <div class="col end">
+                <a class="button dark">In-Progress</a>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <p>
+                    Taste is your ultimate guide to delicious and easy home cooking. Our website offers a wide variety
+                    of cooking tutorials,
+                    covering everything from quick weeknight meals to more elaborate dishes for special occasions. Our
+                    easy-to-follow
+                    recipes and step-by-step instructions make it simple to create delicious meals that you and your
+                    family will love. We
+                    also provide tips and tricks on how to make the most out of your ingredients, and how to prepare
+                    meals that are healthy
+                    and nutritious. We understand how important it is to make every meal count, that's why our website
+                    is dedicated to
+                    providing you with practical and easy recipes that you can make in your own kitchen. Visit Taste
+                    today and start cooking
+                    like a pro!
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>
+                    HANDY
+                </h3>
+            </div>
+            <div class="col end">
+                <a class="button error">Paused</a>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <p>
+                    Handy is your go-to source for tutorials on everyday tasks like home improvement and car repairs.
+                    Our website offers
+                    step-by-step guides and videos to help you tackle projects big and small. From changing a light bulb
+                    to rebuilding an
+                    engine, our experts have you covered. We also offer product reviews and recommendations to help you
+                    make informed
+                    decisions when purchasing tools and equipment. With Handy, you'll have the confidence and skills to
+                    tackle any project.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    LOW itself has a comment endpoint that can be used to create comment sections that make your site
+                    feel like a forum. It supports accountless commenting and optional email notifications if the user
+                    opts in.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>
+                    Projects
+                </h2>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <h3>
+                    <a href="https://chat.low.sh">Chit Chat</a>
+                </h3>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <img src="./assets/chitchat.webp" alt="chitchat screenshot">
+            </div>
+        </div>
+        <br>
+        <div class="row mx30">
+            <div class="col">
+                <p>
+                    Chit Chat is a free messaging platform hosted on Vercel. The goal of creating this was to make a
+                    censorship-free platform that is end-to-end encrypted and uses Web-RTC for all communications. Chit
+                    Chat is secured using a custom encryption algorithm that I will go further into detail about later.
+                    The messages are encrypted on every channel and there are options to encrypt the messages so only
+                    people in the room you are in with the password can view them. The Web-RTC connections are not done
+                    using the Chit Chat server but instead are routed through the web-torrent network that also uses the
+                    Web-RTC protocol.
+                </p>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <h3>
+                    <a href="https://www.npmjs.com/package/kodjs">KOD.JS</a>
+                </h3>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <img src="./assets/kodjs.png" alt="kodjs screenshot">
+            </div>
+        </div>
+        <br>
+        <div class="row mx30">
+            <div class="col">
+                <p>
+                    KOD.JS generates images of code like the one above (the code above was used to generate itself). The
+                    reason I created this instead of using the wonderful <a
+                        href="https://carbon.now.sh">carbon.now.sh</a> is carbon is only
+                    good for manually generating
+                    code snippets. I needed something that was able to make the screenshots on the server and in the
+                    browser. KOD.JS is kept lightweight by only loading the language and CSS file after the init
+                    functional is called, so you aren't shipping not used code to the client side.
+                </p>
+            </div>
+        </div>
+        <div class="row mx30">
+            <div class="col">
+                <h3>
+                    <a href="https://www.npmjs.com/package/cipherhash">cipherHash</a>
+                </h3>
+            </div>
+        </div>
+        <div x-data="{ msg: 'This is an example message', password: 'EncryptionKey', res: cipherHash('This is an example message','EncryptionKey') }"
+            @update="res = cipherHash(msg,password);">
+            <div class="row mx30">
+
+                <div class="col">
+                    <h4>Message</h4>
+                    <input type="text" x-bind:value="msg" @keyup="msg = $el.value;$dispatch('update'); ">
+                </div>
+                <div class="col">
+                    <h4>Password</h4>
+                    <input type="password" x-bind:value="password" @keyup="password = $el.value;$dispatch('update'); ">
+                </div>
+            </div>
+            <div class="row mx30">
+
+                <div class="col">
+                    <h4>Hex Encode the message</h4>
+                    <input type="text" disabled x-bind:value="a2hex(msg)">
+                </div>
+                <div class="col">
+                    <h4>Hash the password</h4>
+                    <input type="text" disabled x-bind:value="hash(password).slice(0,password.length)">
+                </div>
+            </div>
+            <div class="row mx30">
+                <div class="col">
+                    <h4>Result</h4>
+                    <input type="text" disabled x-bind:value="res">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="row mx30">
+            <div class="col">
+                <p>
+                    cipherHash is an encryption algorithm developed as a fun project for unsecured projects. It uses a
+                    system that breaks
+                    the message into character codes, numbers representing every possible character. Then it takes the
+                    character code and
+                    turns it into a hex string which is why the messages are always longer than the original. Once it's
+                    a hex string the
+                    password is hashed, then if the hash of the password is shorter than the message the hash gets
+                    hashed again and appended
+                    to the original hash. This continues until the password is the length of the message, then each
+                    character is ciphered
+                    with the corresponding character in the hash string. This ensures the encryption is 99% secure as
+                    long as the SHA256
+                    hashing function can not be reversed. This was made as a challenge for myself doesn't use this, as I
+                    cannot guarantee
+                    that no one can break it is, but this is a pretty good encryption tool.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>
+                    More
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    I have many more projects, too many to be added here, that are in multiple stages of developement.
+                    Some I've stopped working on and some are not meant to be a product of any kind. If you want to see
+                    what I am currently working on, the best place to go is to my GitHub below. Thank you for checking
+                    this site out, if you have and questions feel free to email me!
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col center">
+                <a href="https://github.com/lakefox">
+                    <button class="link">
+                        GitHub
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
