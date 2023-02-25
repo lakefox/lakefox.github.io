@@ -314,7 +314,8 @@
 
                 <div class="col">
                     <h4>Message</h4>
-                    <input type="text" x-bind:value="msg" @keyup="msg = $el.value;$dispatch('update'); ">
+                    <input type="text" autocomplete="off" x-bind:value="msg"
+                        @keyup="msg = $el.value;$dispatch('update'); ">
                 </div>
                 <div class="col">
                     <h4>Password</h4>
@@ -326,17 +327,18 @@
 
                 <div class="col">
                     <h4>Hex Encode the message</h4>
-                    <input type="text" disabled x-bind:value="a2hex(msg)">
+                    <input type="text" autocomplete="off" disabled x-bind:value="a2hex(msg)">
                 </div>
                 <div class="col">
                     <h4>Hash the password</h4>
-                    <input type="text" disabled x-bind:value="hash(password).slice(0,password.length)">
+                    <input type="text" autocomplete="off" disabled
+                        x-bind:value="hash(password).slice(0,password.length)">
                 </div>
             </div>
             <div class="row mx30">
                 <div class="col">
                     <h4>Result</h4>
-                    <input type="text" disabled x-bind:value="res">
+                    <input type="text" autocomplete="off" disabled x-bind:value="res">
                 </div>
             </div>
         </div>
