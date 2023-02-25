@@ -318,7 +318,8 @@
                 </div>
                 <div class="col">
                     <h4>Password</h4>
-                    <input type="password" x-bind:value="password" @keyup="password = $el.value;$dispatch('update'); ">
+                    <input type="password" autocomplete="off" x-bind:value="password"
+                        @keyup="password = $el.value;$dispatch('update'); ">
                 </div>
             </div>
             <div class="row mx30">
